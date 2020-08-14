@@ -1,8 +1,12 @@
+import axios from 'axios';
+
 /*
   STEP 1: using axios, send a GET request to the following URL
     (replacing the placeholder with your Github name):
     https://api.github.com/users/<your name>
 */
+
+const card = document.querySelector('.cards');
 axios
 .get('https://api.github.com/users/TimothyfhallJr')
 .then(res=>{
@@ -58,6 +62,22 @@ const followersArray = [];
       </div>
     </div>
 */
+function userCard(obj) {
+  const card = document.createElement('div');
+  const image = document.createElement('img');
+  const cardInfo = document.createElement('div');
+  const name = document.createElement('h3');
+  const userName = document.createElement('p');
+  const location = document.createElement('p');
+  const profile = document.createElement('p');
+  const link = document.createElement('a');
+  const followers = document.createElement('p');
+  const following = document.createElement('p');
+  const bio = document.createElement('p');
+
+}
+
+
 
 /*
   List of LS Instructors Github username's:
